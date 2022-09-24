@@ -1,5 +1,9 @@
-export default function Memes({ memes
-}) {
+export default function Memes({ memes }) {
+    const listElements = memes.map(mem => (
+        <li>
+
+        </li>
+    ))
     return (
         <h1>Memy</h1>
     )
