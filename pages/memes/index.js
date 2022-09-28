@@ -17,7 +17,7 @@ export default function Memes({memes}) {
 }
 
 export const getServerSideProps = async () => {
-    const respnonse = await fetch('https://api.imgflip.com/get_memes');
+    const response = await fetch('https://api.imgflip.com/get_memes');
     const {data, success} = await response.json();
 
     if (!success) {
